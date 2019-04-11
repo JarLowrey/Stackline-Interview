@@ -1,1 +1,1 @@
-export const LOAD_DATA = 'LOAD_DATA';
+export const LOAD_CHART_DATA = 'LOAD_CHART_DATA';

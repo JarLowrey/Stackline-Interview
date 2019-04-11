@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Home from './routes/Home';
 
 import store from "./store/store";
-import { LOAD_DATA } from "./store/actionTypes";
+import { LOAD_CHART_DATA } from "./store/actionTypes";
 import { Provider } from "react-redux";
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -21,12 +21,13 @@ class App extends Component {
     this.lazyLoadRetailData();
   }
 
-  async lazyLoadRetailData () {
+  async lazyLoadRetailData() {
     const retailData = await import('./assets/data/Webdev_data2.json');
 
     store.dispatch({
-      type: LOAD_DATA,
-      retailSaleData: retailData
+      type: LOAD_CHART_DATA,
+      retailSaleData: retailData,
+      index: 0,
     });
   }
 

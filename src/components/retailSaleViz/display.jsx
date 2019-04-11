@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 
-export default class extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+import Chart from './chart';
+import Table from './table';
 
+export default class extends Component {
     render() {
-        const blenderData = this.props.retailSaleData[0];
+        console.log(this.props.retailSaleData);
         
         return (
             <div>
+                <Chart data = {1}/>
+                <Table data = {1}/>
             </div>
         );
     }

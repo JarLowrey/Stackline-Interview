@@ -1,13 +1,13 @@
 import React, { Component } from "react";
+import Plot from 'react-plotly.js';
 
 export default class extends Component {
-	constructor(props) {
-		super(props);
-	}
-	
 	render() {
 		return (
-			<div>
+			<div style={{ display: 'block' }}>
+				<Plot
+					data={this.props.data}
+				/>
 			</div>
 		);
 	}

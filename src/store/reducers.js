@@ -1,16 +1,18 @@
 import { combineReducers } from "redux";
-import { LOAD_DATA } from './actionTypes';
+import { LOAD_CHART_DATA } from './actionTypes';
 
 function loadDataReducer(
     state = {
         retailSaleData: {},
+        index: 0,
     },
     action
 ) {
     switch (action.type) {
-        case LOAD_DATA:
+        case LOAD_CHART_DATA:
+            const itemData = action.retailSaleData[action.index];
             return Object.assign({}, state, {
-                retailSaleData: action.retailSaleData
+                retailSaleData: itemData.sales
             });
         default:
             return state;
