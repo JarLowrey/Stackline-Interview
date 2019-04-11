@@ -32,8 +32,7 @@ MyComponent.propTypes = {
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    sub1: PropTypes.string.isRequired,
-    sub2: PropTypes.string.isRequired,
+    sub: PropTypes.string.isRequired,
 };
 
 export default MyComponent;

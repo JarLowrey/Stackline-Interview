@@ -29,7 +29,7 @@ export default class extends Component {
                         <img src="/imgs/icons/home.png" alt="home"
                             width={navBarIconWidth} height="auto" />
                         <Typography style={{ marginLeft: '15px' }}
-                            variant="button"
+                            variant="caption"
                             color="secondary">
                             OVERVIEW
                         </Typography>
@@ -39,7 +39,7 @@ export default class extends Component {
                             width={navBarIconWidth} height="auto" />
 
                         <Typography style={{ marginLeft: '15px' }}
-                            variant="button"
+                            variant="caption"
                             color="primary">
                             SALES
                         </Typography>

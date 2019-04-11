@@ -6,7 +6,7 @@ export default class extends Component {
 	render() {
 		return (
 			<div>
-				<Typography variant="h6">Retail Sales</Typography>
+				<Typography  variant="h6">Retail Sales</Typography>
 				<RetailSaleViz />
 			</div>
 		);
