@@ -11,7 +11,7 @@ export default class extends Component {
             <div>
                 <Header />
                 <div style={{ flexGrow: 1, margin: "100px 50px" }}>
-                    <Grid container spacing={24}>
+                    <Grid container spacing={40}>
                         <Grid item xs={2}>
                             <LeftColumn />
                         </Grid>

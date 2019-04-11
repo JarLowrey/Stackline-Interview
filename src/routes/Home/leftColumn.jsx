@@ -6,7 +6,6 @@ import ListItem from '@material-ui/core/ListItem';
 import Typography from "@material-ui/core/Typography";
 
 import SubtitledImage from '../../components/subtitledImage';
-import { bold } from "ansi-colors";
 
 const navBarIconWidth = '20px';
 
