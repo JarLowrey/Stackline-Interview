@@ -1,18 +1,26 @@
 import { combineReducers } from "redux";
 import { LOAD_CHART_DATA } from './actionTypes';
 
-function loadDataReducer(
+function loadChartData(
     state = {
-        retailSaleData: {},
-        index: 0,
+        weekEnding: [],
+        retailSales: [],
+        wholesaleSales: [],
+        unitsSold: [],
+        retailerMargin: []
     },
     action
 ) {
     switch (action.type) {
         case LOAD_CHART_DATA:
-            const itemData = action.retailSaleData[action.index];
+            const sales = action.retailSaleData[action.index].sales;
+
             return Object.assign({}, state, {
-                retailSaleData: itemData.sales
+                weekEnding: sales.map(x => x.weekEnding + " 00:00:00"),
+                retailSales: sales.map(x => x.retailSales),
+                wholesaleSales: sales.map(x => x.wholesaleSales),
+                unitsSold: sales.map(x => x.unitsSold),
+                retailerMargin: sales.map(x => x.retailerMargin),
             });
         default:
             return state;
@@ -20,7 +28,7 @@ function loadDataReducer(
 }
 
 const rootReducer = combineReducers({
-    loadDataReducer
+    loadDataReducer: loadChartData
 });
 
 export default rootReducer;

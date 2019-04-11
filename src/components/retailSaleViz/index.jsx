@@ -3,7 +3,7 @@ import Display from "./display.jsx";
 
 const mapStateToProps = state => {
 	return {
-		retailSaleData: state.loadDataReducer.retailSaleData
+		retailSaleData: state.loadDataReducer
 	};
 };
 
