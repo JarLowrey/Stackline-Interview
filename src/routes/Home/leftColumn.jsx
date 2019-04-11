@@ -27,7 +27,8 @@ export default class extends Component {
 
                 <List >
                     <ListItem button>
-                        <img src="/imgs/icons/home.png" width={navBarIconWidth} height="auto" />
+                        <img src="/imgs/icons/home.png" alt="home"
+                            width={navBarIconWidth} height="auto" />
                         <Typography style={{ marginLeft: '15px' }}
                             variant="button"
                             color="secondary">
@@ -35,7 +36,8 @@ export default class extends Component {
                         </Typography>
                     </ListItem>
                     <ListItem button>
-                        <img src="/imgs/icons/sales.png" width={navBarIconWidth} height="auto" />
+                        <img src="/imgs/icons/sales.png" alt="sales"
+                            width={navBarIconWidth} height="auto" />
 
                         <Typography style={{ marginLeft: '15px' }}
                             variant="button"
