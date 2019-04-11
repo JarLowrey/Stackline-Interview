@@ -22,6 +22,7 @@ export default class MyComponent extends Component {
 				<Plot
 					data={[
 						{
+							name:"Retail Sales",
 							x: data.weekEnding,
 							y: data.retailSales,
 							type: 'scatter',
@@ -30,6 +31,7 @@ export default class MyComponent extends Component {
 							marker: { color: '#45a8f6' },
 						},
 						{
+							name:"Wholesale Sales",
 							x: data.weekEnding,
 							y: data.wholesaleSales,
 							type: 'scatter',
