@@ -18,11 +18,12 @@ export default class MyComponent extends Component {
 		const yMax = Math.max(MyComponent.getMaxOfArray(data.retailSales), MyComponent.getMaxOfArray(data.wholesaleSales))
 
 		return (
-			<div style={{ display: 'block' }}>
+			<div style={{ display: 'block', width: "100%" }}>
 				<Plot
+					style={{ width: "100%" }}
 					data={[
 						{
-							name:"Retail Sales",
+							name: "Retail Sales",
 							x: data.weekEnding,
 							y: data.retailSales,
 							type: 'scatter',
@@ -31,7 +32,7 @@ export default class MyComponent extends Component {
 							marker: { color: '#45a8f6' },
 						},
 						{
-							name:"Wholesale Sales",
+							name: "Wholesale Sales",
 							x: data.weekEnding,
 							y: data.wholesaleSales,
 							type: 'scatter',
@@ -40,6 +41,7 @@ export default class MyComponent extends Component {
 						},
 					]}
 					layout={{
+						autosize: true,
 						showlegend: false,
 						xaxis: {
 						},
