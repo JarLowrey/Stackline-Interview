@@ -22,9 +22,11 @@ class App extends Component {
   }
 
   async lazyLoadRetailData () {
-    store.dispatch({ //lasy load json data with redux
+    const retailData = await import('./assets/data/Webdev_data2.json');
+
+    store.dispatch({
       type: LOAD_DATA,
-      retailSaleData: await import('./assets/data/Webdev_data2.json')
+      retailSaleData: retailData
     });
   }
 

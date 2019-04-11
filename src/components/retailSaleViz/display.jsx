@@ -6,8 +6,8 @@ export default class extends Component {
     // }
 
     render() {
-        console.log(this.props.retailSaleData);
-
+        const blenderData = this.props.retailSaleData[0];
+        
         return (
             <div>
             </div>
