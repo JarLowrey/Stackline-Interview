@@ -28,7 +28,7 @@ export default class MyComponent extends Component {
 							y: data.retailSales,
 							type: 'scatter',
 							mode: 'lines',
-							// line: {'shape': 'spline', 'smoothing': 1.3}, 
+							line: {'shape': 'spline', 'smoothing': 1.3}, 
 							marker: { color: '#45a8f6' },
 						},
 						{
@@ -37,6 +37,7 @@ export default class MyComponent extends Component {
 							y: data.wholesaleSales,
 							type: 'scatter',
 							mode: 'lines',
+							line: {'shape': 'spline', 'smoothing': 1.3}, 
 							marker: { color: '#9ba6bf' },
 						},
 					]}
