@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 class MyComponent extends Component {
     render() {
         return (
-            <div>
+            <div
+                style={{ marginBottom: '25px' }}>
                 <div style={{ textAlign: 'center' }}>
                     <img
                         alt={this.props.alt}
@@ -14,13 +15,13 @@ class MyComponent extends Component {
                         style={{ display: 'block', margin: '0 auto' }} />
 
 
-                    <Typography variant="h6" gutterBottom>
+                    <Typography variant="h6" gutterBottom >
                         {this.props.title}
                     </Typography>
-                    <Typography variant="subtitle2" gutterBottom style={{ color: '#878787' }}>
+                    <Typography variant="subtitle2" gutterBottom color="secondary">
                         {this.props.sub1}
                     </Typography>
-                    <Typography variant="subtitle2" gutterBottom style={{ color: '#878787' }}>
+                    <Typography variant="subtitle2" gutterBottom color="secondary">
                         {this.props.sub2}
                     </Typography>
                 </div>
