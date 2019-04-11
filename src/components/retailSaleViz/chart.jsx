@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Plot from 'react-plotly.js';
 
 export default class MyComponent extends Component {
-	static getMaxOfArray(arr) {
-		return arr.reduce(function (a, b) {
-			return Math.max(a, b);
-		});
-	}
+	// static getMaxOfArray(arr) {
+	// 	return arr.reduce(function (a, b) {
+	// 		return Math.max(a, b);
+	// 	});
+	// }
 	render() {
 		const data = this.props.retailSaleData;
 
@@ -15,7 +15,7 @@ export default class MyComponent extends Component {
 			return <div />;
 		}
 
-		const yMax = Math.max(MyComponent.getMaxOfArray(data.retailSales), MyComponent.getMaxOfArray(data.wholesaleSales))
+		// const yMax = Math.max(MyComponent.getMaxOfArray(data.retailSales), MyComponent.getMaxOfArray(data.wholesaleSales))
 
 		return (
 			<div style={{ display: 'block', width: "100%" }}>
