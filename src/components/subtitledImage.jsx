@@ -19,10 +19,7 @@ class MyComponent extends Component {
                         {this.props.title}
                     </Typography>
                     <Typography variant="subtitle2" gutterBottom color="secondary">
-                        {this.props.sub1}
-                    </Typography>
-                    <Typography variant="subtitle2" gutterBottom color="secondary">
-                        {this.props.sub2}
+                        {this.props.sub}
                     </Typography>
                 </div>
             </div>

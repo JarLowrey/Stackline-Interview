@@ -17,8 +17,7 @@ export default class extends Component {
                     src="/imgs/blender.png"
                     alt="blender"
                     title="Shark Ninja"
-                    sub1="Magic Bullet NutriBullet 12-Piece"
-                    sub2="High-Speed Blender/Mixer System" />
+                    sub="Magic Bullet NutriBullet 12-Piece High-Speed Blender/Mixer System" />
 
                 <Button color="primary">Pantry</Button>
                 <Button color="primary">Obsolete</Button>
