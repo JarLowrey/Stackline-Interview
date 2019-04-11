@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Header from '../components/header';
+import Header from '../../components/header';
 
 import Grid from '@material-ui/core/Grid';
-import LeftColumn from '../components/leftColumn';
-import RightColumn from '../components/rightColumn';
+import LeftColumn from './leftColumn';
+import RightColumn from './rightColumn';
 
 export default class extends Component {
     render() {
